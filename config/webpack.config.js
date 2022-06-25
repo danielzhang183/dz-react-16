@@ -409,6 +409,7 @@ module.exports = function (webpackEnv) {
                   'babel-preset-react-app/webpack-overrides'
                 ),
                 presets: [
+                  require.resolve("@babel/plugin-transform-flow-strip-types"),
                   [
                     require.resolve('babel-preset-react-app'),
                     {
